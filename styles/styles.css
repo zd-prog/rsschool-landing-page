@@ -160,6 +160,28 @@ a.button {
     text-decoration: none;
 }
 
+.about .container h2 {
+    color: var(--primary);
+}
+
+.images {
+    display: flex;
+    gap: 40px;
+}
+
+.column-1,
+.column-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.column-1 img,
+.column-2 img {
+    border-radius: 20px;
+}
+
+
 .mobile .container {
     display: flex;
     justify-content: space-between;
