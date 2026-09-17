@@ -123,6 +123,10 @@ ul li a {
     margin-right: 24px;
 }
 
+section {
+    margin-bottom: 100px;
+}
+
 .hero .container {
     background-image: url('../images/hero.jpg');
     border-radius: 40px;
@@ -156,6 +160,33 @@ a.button {
     text-decoration: none;
 }
 
+.mobile .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile .container h2 {
+    color: var(--primary);
+    width: 630px;
+    height: 150px;
+    margin-right: 100px;
+    margin-bottom: 40px;
+}
+
+.mobile .container .medium {
+    color: var(--primary);
+    width: 630px;
+    height: 48px;
+    margin-right: 100px;
+    margin-bottom: 40px;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
 footer .container {
     background-color: var(--container);
     padding: 100px;
@@ -164,7 +195,7 @@ footer .container {
     align-items: center;
 }
 
-.container h2 {
+footer .container h2 {
     width: 530px;
     height: 150px;
     margin-right: 100px;
