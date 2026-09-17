@@ -160,6 +160,60 @@ a.button {
     text-decoration: none;
 }
 
+.favorite .container h2 {
+    color: var(--primary);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.slider-row {
+    display: flex;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.slide {
+    flex: 0 0 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+.content {
+    width: 480px;
+    align-items: center;
+    justify-content: center;
+}
+
+.description h3 {
+    color: var(--primary);
+    text-align: center;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 40px;
+}
+
+.control {
+    width: 40px;
+    height: 4px;
+    background-color: var(--border-primary);
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.control.current {
+    background-color: var(--border-inverse);
+}
+
 .about .container h2 {
     color: var(--primary);
 }
