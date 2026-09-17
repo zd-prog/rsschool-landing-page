@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    font-family: 'Inter';
+}
+
+:root {
+    --primary: #403F3D;
+    --inverse: #E1D4C9;
+    --accent: #B0907A;
+
+    --page: #E1D4C9;
+    --container: #665F55;
+    --overlay: #403F3DCC;
+
+    --border-primary: #C1B6AD;
+    --border-inverse: #665F55;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary: #E1D4C9;
+        --inverse: #E1D4C9;
+        --accent: #B0907A;
+
+        --page: #292826;
+        --container: #403F3D;
+        --overlay: #2D2D2D;
+
+        --border-primary: #665F55;
+        --border-inverse: #C1B6AD;
+    }
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--page);
+}
+
+h1 {
+    font-size: 72px;
+    font-weight: 600;
+    line-height: 105%;
+    color: var(--inverse);
+}
+
+.accent {
+    font-style: italic;
+}
+
+h2 {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 125%;
+    color: var(--inverse);
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 125%;
+    color: var(--inverse);
+}
+
+.medium {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.caption {
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 140%;
+}
+
+.container {
+    margin: 20px 40px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 40px;
+}
+
+ul li {
+    text-align: center;
+    display: flex;
+}
+
+ul li a {
+    display: block;
+    text-decoration: none;
+    color: var(--primary);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+
+}
+
+.theme-switch {
+    margin-right: 24px;
+}
+
+.hero .container {
+    background-image: url('../images/hero.jpg');
+    border-radius: 40px;
+    background-repeat: no-repeat;
+    padding: 100px;
+}
+
+.hero .offer {
+    width: 530px;
+    height: 444px;
+}
+
+span.accent {
+    color: var(--accent);
+}
+
+.offer .medium {
+    color: var(--inverse);
+}
+
+a.button {
+    background-color: var(--page);
+    color: var(--primary);
+    appearance: none;
+    border-radius: 100px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+    padding: 20px 78px;
+    outline: none;
+    text-decoration: none;
+}
+
+footer .container {
+    background-color: var(--container);
+    padding: 100px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.container h2 {
+    width: 530px;
+    height: 150px;
+    margin-right: 100px;
+}
+
+.contacts ul {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contacts ul li {
+    gap: 8px
+}
+
+.contacts ul li a {
+    color: var(--inverse);
+}
