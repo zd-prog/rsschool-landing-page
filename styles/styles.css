@@ -200,6 +200,19 @@ a.button {
     width: 100%;
 }
 
+.arrow-button {
+
+    border-style: solid;
+    border-color: var(--border-inverse);
+    border-width: 1px;
+    border-radius: 100px;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
 .slider-row {
     display: flex;
     overflow-x: hidden;
