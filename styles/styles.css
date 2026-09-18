@@ -436,6 +436,24 @@ footer .container h2 {
     margin-right: 100px;
 }
 
+.socials {
+    display: flex;
+    gap: 12px
+}
+
+.socials a {
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--border-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
 .contacts ul {
     flex-direction: column;
     gap: 20px;
