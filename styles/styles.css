@@ -121,11 +121,34 @@ ul li a {
 .header-actions {
     display: flex;
     align-items: center;
-
 }
 
 .theme-switch {
     margin-right: 24px;
+    border-style: solid;
+    border-color: var(--border-primary);
+    border-width: 1px;
+    border-radius: 100px;
+    display: flex;
+    padding: 4px;
+    align-items: center;
+    justify-items: center;
+    gap: 8px;
+}
+
+.toggle {
+    width: 36px;
+    height: 36px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.toggle.current {
+    background-color: var(--accent);
+    border-radius: 100px;
 }
 
 section {
