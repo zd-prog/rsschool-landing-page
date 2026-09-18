@@ -263,6 +263,104 @@ a.button {
     gap: 20px;
 }
 
+.menu .container .offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.menu .container .offer h2 {
+    width: 800px;
+    height: 150px;
+    text-align: center;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.tab {
+    border-width: 1px;
+    border-color: var(--border-primary);
+    border-radius: 100px;
+    border-style: solid;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    padding: 11px 16px 11px 8px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+    color: var(--primary);
+}
+
+.tab .icon {
+    width: 30px;
+    height: 30px;
+    background-color: var(--border-primary);
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+}
+
+.tab.current {
+    background-color: var(--container);
+    color: var(--inverse);
+}
+
+.tab.current .icon {
+    background-color: var(--page);
+    margin: 3px 7px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, auto) 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 40px
+}
+
+.preview {
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--border-primary);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.preview img {
+    border-radius: 40px;
+}
+
+.title {
+    margin-bottom: 12px;
+}
+
+.title h3 {
+    width: 270px;
+    height: 30px;
+    text-align: start;
+    margin-bottom: 12px;
+}
+
+.preview .description h3 {
+    text-align: start;
+}
+
+.title .medium {
+    width: 270px;
+    height: 72px;
+    color: var(--primary);
+}
+
 footer .container {
     background-color: var(--container);
     padding: 100px;
