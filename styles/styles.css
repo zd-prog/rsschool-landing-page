@@ -201,7 +201,6 @@ a.button {
 }
 
 .arrow-button {
-
     border-style: solid;
     border-color: var(--border-inverse);
     border-width: 1px;
@@ -302,6 +301,26 @@ a.button {
 .buttons {
     display: flex;
     gap: 20px;
+}
+
+.buttons a {
+    text-decoration: none;
+    color: var(--primary);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.app-button {
+    display: flex;
+    border-color: var(--border-inverse);
+    border-style: solid;
+    border-radius: 100px;
+    border-width: 1px;
+    padding: 12px 20px;
+    gap: 13px;
+    align-items: center;
+    justify-items: center;
 }
 
 .menu .container .offer {
