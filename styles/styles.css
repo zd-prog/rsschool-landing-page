@@ -279,6 +279,7 @@ a.button {
     width: 800px;
     height: 150px;
     text-align: center;
+    color: var(--primary);
 }
 
 .tabs {
