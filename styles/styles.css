@@ -98,6 +98,18 @@ header .container {
     align-items: center;
 }
 
+.logo-dark {
+    display: none;
+}
+
+body.dark .logo {
+    display: none;
+}
+
+body.dark .logo-dark {
+    display: block;
+}
+
 ul {
     list-style: none;
     margin: 0;
@@ -164,6 +176,18 @@ ul li a:hover {
     border-radius: 100px;
 }
 
+.moon-dark {
+    display: none;
+}
+
+body.dark .moon {
+    display: none;
+}
+
+body.dark .moon-dark {
+    display: block;
+}
+
 section {
     margin-bottom: 100px;
 }
@@ -208,6 +232,18 @@ a.button:hover img {
     visibility: visible;
 }
 
+.coffee-cup-dark {
+    display: none;
+}
+
+body.dark .coffee-cup {
+    display: none;
+}
+
+body.dark .coffee-cup-dark {
+    display: unset;
+}
+
 .favorite .container h2 {
     color: var(--primary);
     margin-bottom: 40px;
@@ -232,8 +268,28 @@ a.button:hover img {
     cursor: pointer;
 }
 
+.arrow-icon-dark {
+    display: none;
+}
+
+body.dark .arrow-icon {
+    display: none;
+}
+
+body.dark .arrow-icon-dark {
+    display: block;
+}
+
 .arrow-button:hover {
     background-color: var(--container);
+}
+
+.arrow-button:hover .arrow-icon {
+    display: none;
+}
+
+.arrow-button:hover .arrow-icon-dark {
+    display: block;
 }
 
 .slider-row {
@@ -347,9 +403,29 @@ a.button:hover img {
     justify-items: center;
 }
 
+.store-icon-dark {
+    display: none;
+}
+
+body.dark .store-icon {
+    display: none;
+}
+
+body.dark .store-icon-dark {
+    display: block;
+}
+
 .app-button:hover {
     background-color: var(--container);
     color: var(--inverse);
+}
+
+.app-button:hover .store-icon {
+    display: none;
+}
+
+.app-button:hover .store-icon-dark {
+    display: block;
 }
 
 .menu .container .offer {
