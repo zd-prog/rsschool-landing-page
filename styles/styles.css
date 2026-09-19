@@ -645,6 +645,21 @@ footer .container h2 {
         width: 100%;
     }
 
+    .hero .container {
+        background-position: center;
+        background-size: cover;
+    }
+
+    .column-2 {
+        display: none;
+    }
+
+    .grid {
+        grid-template-columns: repeat(1, auto) 1fr;
+    }
+}
+
+@media (max-width: 768px) {
     nav {
         display: none;
     }
@@ -675,19 +690,6 @@ footer .container h2 {
 
     body.dark .burger-menu-dark {
         display: block;
-    }
-
-    .hero .container {
-        background-position: center;
-        background-size: cover;
-    }
-
-    .column-2 {
-        display: none;
-    }
-
-    .grid {
-        grid-template-columns: repeat(1, auto) 1fr;
     }
 }
 
