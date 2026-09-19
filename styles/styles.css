@@ -516,7 +516,7 @@ body.dark .store-icon-dark {
     display: grid;
     grid-template-columns: repeat(3, auto) 1fr;
     grid-template-rows: auto 1fr;
-    gap: 40px
+    gap: 40px;
 }
 
 .preview {
@@ -530,8 +530,18 @@ body.dark .store-icon-dark {
     justify-content: space-between;
 }
 
-.preview img {
+.preview,
+.image-box {
+    width: 300px;
     border-radius: 40px;
+}
+
+.preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
 }
 
 .title {
