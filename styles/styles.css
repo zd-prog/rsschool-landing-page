@@ -17,19 +17,17 @@
     --border-inverse: #665F55;
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --primary: #E1D4C9;
-        --inverse: #E1D4C9;
-        --accent: #B0907A;
+body.dark {
+    --primary: #E1D4C9;
+    --inverse: #E1D4C9;
+    --accent: #B0907A;
 
-        --page: #292826;
-        --container: #403F3D;
-        --overlay: #2D2D2D;
+    --page: #292826;
+    --container: #403F3D;
+    --overlay: #2D2D2D;
 
-        --border-primary: #665F55;
-        --border-inverse: #C1B6AD;
-    }
+    --border-primary: #665F55;
+    --border-inverse: #C1B6AD;
 }
 
 html {
