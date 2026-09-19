@@ -137,7 +137,7 @@ ul li a {
 }
 
 ul li a:hover {
-    border-bottom: var(--primary) 2px solid;
+    box-shadow: inset 0 -3px 0 0 var(--primary);
 }
 
 .header-actions {
@@ -609,7 +609,7 @@ footer .container h2 {
 }
 
 .contacts ul li a:hover {
-    border-bottom: var(--inverse) 2px solid;
+    box-shadow: inset 0 -3px 0 0 var(--inverse);
 }
 
 .burger-menu-button {
