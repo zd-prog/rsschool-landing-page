@@ -526,6 +526,10 @@ body.dark .store-icon-dark {
 }
 
 .grid {
+    display: none;
+}
+
+.grid.current {
     display: grid;
     grid-template-columns: repeat(3, auto) 1fr;
     gap: 40px;
@@ -705,7 +709,7 @@ footer .container h2 {
         align-items: start;
     }
 
-    .grid {
+    .grid.current {
         grid-template-columns: repeat(2, auto) 1fr;
     }
 }
@@ -724,7 +728,7 @@ footer .container h2 {
         display: none;
     }
 
-    .grid {
+    .grid.current {
         grid-template-columns: repeat(1, auto) 1fr;
     }
 
@@ -809,7 +813,7 @@ footer .container h2 {
         margin-bottom: 40px;
     }
 
-    .grid {
+    .grid.current {
         grid-template-columns: 1fr;
     }
 

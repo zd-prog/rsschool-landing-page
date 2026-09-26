@@ -62,6 +62,10 @@ fetch('../data/products.json')
                 <h3>${item.price}</h3>`;
             previewDiv.appendChild(descriptionDiv);
 
+            if (item.category === selectedCategory.toLowerCase()) {
+                grid.classList.add("current");
+            }
+
             grid.appendChild(previewDiv);
         });
     })
@@ -142,11 +146,10 @@ function showModal(category, id) {
                 tabDiv.innerHTML = `<div class="icon">${key.toUpperCase()}</div>${value.size}`;
 
                 tabDiv.addEventListener('click', () => {
-
                     const current = tabsDiv.querySelector(".current");
 
                     if (current) {
-                        current.className = "tab";
+                        current.classList.remove("current");
                     }
 
                     tabDiv.classList.add("current");
@@ -232,3 +235,47 @@ function showModal(category, id) {
     previewDiv.appendChild(descriptionDiv);
     modal.appendChild(previewDiv);
 }
+
+const categories = { Coffee: "☕", Tea: "🫖", Dessert: "🍰" }
+
+const categoriesTabs = document.querySelector(".menu").querySelector(".tabs");
+
+const categoriesKeys = Object.keys(categories);
+
+let selectedCategory = categoriesKeys[0];
+
+categoriesKeys.forEach((category) => {
+    const categoryTab = document.createElement('div');
+    categoryTab.className = 'tab';
+    categoryTab.innerHTML = `<div class="icon">${categories[category]}</div>${category}`;
+
+    if (category === selectedCategory) {
+        categoryTab.classList.add("current");
+    }
+
+    categoryTab.addEventListener("click", () => {
+        const current = categoriesTabs.querySelector(".current");
+
+        if (current) {
+            current.classList.remove("current");
+        }
+
+        categoryTab.classList.add("current");
+
+        const currentGrid = document.getElementById(selectedCategory.toLowerCase());
+
+        if (currentGrid) {
+            currentGrid.classList.remove("current");
+        }
+
+        selectedCategory = category;
+
+        const selectedGrid = document.getElementById(category.toLowerCase());
+
+        if (selectedGrid) {
+            selectedGrid.classList.add("current");
+        }
+    })
+
+    categoriesTabs.appendChild(categoryTab);
+});
