@@ -689,6 +689,16 @@ footer .container h2 {
     display: flex;
 }
 
+.burger-menu {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: var(--page);
+    top: 80px;
+    left: 0;
+}
+
 @media (max-width: 1200px) {
     .mobile .container {
         flex-direction: column;
@@ -738,7 +748,7 @@ footer .container h2 {
 }
 
 @media (max-width: 768px) {
-    nav {
+    header nav {
         display: none;
     }
 
@@ -746,27 +756,74 @@ footer .container h2 {
         display: none;
     }
 
+    .burger-menu.open {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 100px;
+    }
+
+    .burger-menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .burger-menu ul li a {
+        font-size: 32px;
+    }
+
     .burger-menu-button {
+        display: block;
+        border-radius: 100px;
+        border-style: solid;
+        border-color: var(--border-inverse);
+        border-width: 1px;
+        width: 44px;
+        height: 44px;
+        align-content: center;
+        text-align: center;
+        justify-items: center;
+    }
+
+    .burger-menu-icon-active {
+        display: none;
+    }
+
+    .burger-menu-button.active .burger-menu-icon {
+        display: none;
+    }
+
+    .burger-menu-button.active .burger-menu-icon-active {
         display: block;
     }
 
-    .burger-menu-active {
+    .burger-menu-icon-dark {
         display: none;
     }
 
-    .burger-menu-dark {
+    .burger-menu-icon-dark-active {
         display: none;
     }
 
-    .burger-menu-dark-active {
+    body.dark .burger-menu-icon {
         display: none;
     }
 
-    body.dark .burger-menu {
+    body.dark .burger-menu-icon-dark {
+        display: block;
+    }
+
+    body.dark .burger-menu-button.active .burger-menu-icon-dark {
         display: none;
     }
 
-    body.dark .burger-menu-dark {
+    body.dark .burger-menu-button.active .burger-menu-icon-active {
+        display: none;
+    }
+
+    body.dark .burger-menu-button.active .burger-menu-icon-dark-active {
         display: block;
     }
 }
