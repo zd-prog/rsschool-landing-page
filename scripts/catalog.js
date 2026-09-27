@@ -1,6 +1,6 @@
 let productsData = [];
 
-fetch('../data/products.json')
+fetch('https://github.com/zd-prog/rsschool-landing-page/blob/landing-page-part-2/data/products.json')
     .then(response => response.json())
     .then(data => {
         productsData = data;
