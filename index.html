@@ -48,10 +48,10 @@
                             </li>
                         </ul>
                         <div class="burger-menu-button">
-                            <img class="burger-menu" src="images/burger-menu.png" alt="Burger Menu">
-                            <img class="burger-menu-active" src="images/burger-menu-active.png" alt="Burger Menu">
-                            <img class="burger-menu-dark" src="images/burger-menu-dark.png" alt="Burger Menu">
-                            <img class="burger-menu-dark-active" src="images/burger-menu-dark-active.png"
+                            <img class="burger-menu-icon" src="images/burger-menu.svg" alt="Burger Menu">
+                            <img class="burger-menu-icon-active" src="images/burger-menu-active.svg" alt="Burger Menu">
+                            <img class="burger-menu-icon-dark" src="images/burger-menu-dark.svg" alt="Burger Menu">
+                            <img class="burger-menu-icon-dark-active" src="images/burger-menu-dark-active.svg"
                                 alt="Burger Menu">
                         </div>
                     </div>
@@ -86,11 +86,6 @@
             <div class="container">
                 <h2>Choose your <span class="accent">favorite</span> coffee</h2>
                 <div class="slider">
-                    <div class="arrow-button">
-                        <img class="arrow-icon" src="images/arrow-left.png" alt="Arrow Left" width="24" height="24">
-                        <img class="arrow-icon-dark" src="images/arrow-left-dark.png" alt="Arrow Left" width="24"
-                            height="24">
-                    </div>
                     <div class="slider-row">
                         <div class="slide">
                             <div class="content">
@@ -126,7 +121,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="arrow-button">
+                    <div class="arrow-button prev">
+                        <img class="arrow-icon" src="images/arrow-left.png" alt="Arrow Left" width="24" height="24">
+                        <img class="arrow-icon-dark" src="images/arrow-left-dark.png" alt="Arrow Left" width="24"
+                            height="24">
+                    </div>
+                    <div class="arrow-button next">
                         <img class="arrow-icon" src="images/arrow-right.png" alt="Arrow Right" width="24" height="24">
                         <img class="arrow-icon-dark" src="images/arrow-right-dark.png" alt="Arrow Right" width="24"
                             height="24">
@@ -250,7 +250,32 @@
         </div>
     </footer>
 
-    <script src="scripts/index.js"></script>
+    <div class="burger-menu">
+        <nav>
+            <ul>
+                <li><a href="index.html#favorite" target="_self">Favorite coffee</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#mobile">Mobile app</a></li>
+                <li><a href="index.html#contact">Contact us</a></li>
+            </ul>
+        </nav>
+
+        <ul>
+            <li>
+                <a href="catalog.html">
+                    Menu
+                    <img class="coffee-cup" src="images/coffee-cup.png" alt="Coffee Cup" width="20" height="20">
+                    <img class="coffee-cup-dark" src="images/coffee-cup-dark.png" alt="Coffee Cup" width="20"
+                        height="20">
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <script src="scripts/theme.js"></script>
+    <script src="scripts/burger.js"></script>
+    <script src="scripts/carousel.js"></script>
+
 </body>
 
 </html>
