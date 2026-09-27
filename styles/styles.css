@@ -554,12 +554,14 @@ body.dark .store-icon-dark {
 
 .grid {
     display: none;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    gap: 40px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .grid.current {
-    display: grid;
-    grid-template-columns: repeat(3, auto) 1fr;
-    gap: 40px;
+    display: grid !important
 }
 
 .preview {
@@ -571,6 +573,29 @@ body.dark .store-icon-dark {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    width: 310px;
+    min-width: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.load-more-container {
+    display: none;
+    justify-content: center;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.load-more-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border: 1px solid var(--border-inverse);
+    border-radius: 100px;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 .menu .preview .image-box {
@@ -745,10 +770,6 @@ footer .container h2 {
         flex-direction: column;
         align-items: start;
     }
-
-    .grid.current {
-        grid-template-columns: repeat(2, auto) 1fr;
-    }
 }
 
 @media (max-width: 1000px) {
@@ -763,10 +784,6 @@ footer .container h2 {
 
     .column-2 {
         display: none;
-    }
-
-    .grid.current {
-        grid-template-columns: repeat(1, auto) 1fr;
     }
 
     .modal .preview {
@@ -853,6 +870,23 @@ footer .container h2 {
     body.dark .burger-menu-button.active .burger-menu-icon-dark-active {
         display: block;
     }
+
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+        gap: 20px;
+    }
+
+    .grid .preview:nth-child(n+5) {
+        display: none !important;
+    }
+
+    .load-more-container {
+        display: flex;
+    }
+
+    .grid.expanded .preview:nth-child(n+5) {
+        display: flex !important;
+    }
 }
 
 @media (max-width: 700px) {
@@ -895,10 +929,6 @@ footer .container h2 {
         height: auto;
         margin-right: 0;
         margin-bottom: 40px;
-    }
-
-    .grid.current {
-        grid-template-columns: 1fr;
     }
 
     .tab {

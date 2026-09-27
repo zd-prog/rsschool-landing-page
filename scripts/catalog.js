@@ -247,3 +247,22 @@ categoriesKeys.forEach((category) => {
 
     categoriesTabs.appendChild(categoryTab);
 });
+
+const loadMoreBtn = document.getElementById('load-more');
+const loadMoreContainer = document.querySelector('.load-more-container');
+
+if (loadMoreBtn) {
+    loadMoreBtn.addEventListener('click', () => {
+        const activeGrid = Array.from(document.querySelectorAll('.grid')).find(grid => {
+            return window.getComputedStyle(grid).display !== 'none';
+        });
+
+        if (activeGrid) {
+            activeGrid.classList.add('expanded');
+        }
+
+        if (loadMoreContainer) {
+            loadMoreContainer.style.setProperty('display', 'none', 'important');
+        }
+    });
+}
