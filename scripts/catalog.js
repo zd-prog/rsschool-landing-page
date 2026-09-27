@@ -253,7 +253,9 @@ const loadMoreContainer = document.querySelector('.load-more-container');
 
 if (loadMoreBtn) {
     loadMoreBtn.addEventListener('click', () => {
-        const activeGrid = Array.from(document.querySelectorAll('.grid')).find(grid => {
+        const grids = Array.from(document.querySelectorAll('.grid'));
+
+        const activeGrid = grids.find(grid => {
             return window.getComputedStyle(grid).display !== 'none';
         });
 
